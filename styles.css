@@ -136,6 +136,26 @@ img {
 .highlight {
   color: var(--primary-color);
 }
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  font-family: var(--font-mono);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--primary-color);
+  border-radius: 50%;
+  transition: var(--transition);
+}
+
+.logo:hover {
+  transform: rotate(10deg);
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+}
+
 
 /* Home Section with Image */
 .home-content {
