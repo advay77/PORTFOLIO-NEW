@@ -1,6 +1,6 @@
 # 🌟 Advay Anand's Portfolio 🚀
 
-![Portfolio Screenshot](![Screenshot 2025-03-26 122051](https://github.com/user-attachments/assets/5cbd8784-02e9-4b5a-a893-b70ad6419da4))
+(![Screenshot 2025-03-26 122051](https://github.com/user-attachments/assets/5cbd8784-02e9-4b5a-a893-b70ad6419da4))
 
 A cutting-edge interactive portfolio with cyberpunk aesthetics, showcasing my skills and projects.
 
