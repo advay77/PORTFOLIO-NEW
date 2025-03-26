@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advay Anand | Full Stack Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <canvas id="matrix-canvas"></canvas>
+    
+    <header>
+        
+        <nav>
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="section">
+            <div class="container">
+              <div class="home-content">
+                <div class="home-text">
+                  <h1 class="glitch" data-text="Advay Anand">Advay Anand</h1>
+                  <div class="typing-container">
+                    <span id="typing-text"></span>
+                    <span class="cursor">|</span>
+                  </div>
+                  <p class="subtitle">Turning ideas into digital reality</p>
+                  <div class="cta-buttons">
+                    <a href="#projects" class="btn primary">View My Work</a>
+                    <a href="#contact" class="btn secondary">Get In Touch</a>
+                  </div>
+                </div>
+                <div class="home-image">
+                  <div class="image-wrapper">
+                    <img src="P1.jpg" alt="Advay Anand" class="profile-image">
+                    <div class="image-glow"></div>
+                    <div class="image-border"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-image">
+                        <div class="image-container">
+                            <img src="P2.jpg" alt="Advay Anand">
+                        </div>
+                    </div>
+                    <div class="about-text">
+                        <h3>Hello, I'm <span class="highlight">Advay Anand</span></h3>
+                        <p>I'm a passionate Full Stack Developer with expertise in building robust and scalable web applications. With a strong foundation in both frontend and backend technologies.</p>
+                        <p>My journey here started 2 years ago, and since then,I'm constantly learning and adapting to new technologies to stay at the forefront of web development.</p>
+                        <p>When I'm not coding, you can find me exploring new places, reading tech blogs, or experimenting with new recipes in the kitchen.</p>
+                        <div class="personal-info">
+                            <div class="info-item">
+                                <span class="label">Name:</span>
+                                <span class="value">Advay Anand</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="label">Email:</span>
+                                <span class="value">advayanand87@gmail.com</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="label">Location:</span>
+                                <span class="value">Prayagraj, India</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="label">Availability:</span>
+                                <span class="value">Open to opportunities</span>
+                            </div>
+                        </div>
+                        <a href="https://drive.google.com/file/d/1O-J8BBNPlorNZbNd3mt4f7iT2KJrI-Ru/view" class="btn primary">Download Resume</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-title">Skills & Achievements</h2>
+                <div class="skills-container">
+                    <div class="skills-category">
+                        <h3>Frontend Development</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                                <div class="skill-info">
+                                    <h4>HTML5</h4>
+                                    <div class="progress-bar">
+                                        <div class="progress" style="width: 95%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                                <div class="skill-info">
+                                    <h4>CSS3</h4>
+                                    <div class="progress-bar">
+                                        <div class="progress" style="width: 90%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fab fa-js"></i></div>
+                                <div class="skill-info">
+                                    <h4>JavaScript</h4>
+                                    <div class="progress-bar">
+                                        <div class="progress" style="width: 92%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fab fa-react"></i></div>
+                                <div class="skill-info">
+                                    <h4>React</h4>
+                                    <div class="progress-bar">
+                                        <div class="progress" style="width: 88%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skills-category">
+                        <h3>Backend Development</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+                                <div class="skill-info">
+                                    <h4>Node.js</h4>
+                                    <div class="progress-bar">
+                                        <div class="progress" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fas fa-database"></i></div>
+                                <div class="skill-info">
+                                    <h4>MongoDB</h4>
+                                    <div class="progress-bar">
+                                        <div class="progress" style="width: 80%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fas fa-server"></i></div>
+                                <div class="skill-info">
+                                    <h4>Express.js</h4>
+                                    <div class="progress-bar">
+                                        <div class="progress" style="width: 82%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fas fa-database"></i></div>
+                                <div class="skill-info">
+                                    <h4>SQL</h4>
+                                    <div class="progress-bar">
+                                        <div class="progress" style="width: 78%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="achievements">
+                    <h3>Achievements</h3>
+                    <div class="achievements-grid">
+                        <div class="achievement-item">
+                            <div class="achievement-icon"><i class="fas fa-trophy"></i></div>
+                            <div class="achievement-content">
+                                <h4>Community Member (BIZBYTE)</h4>
+                                <p>Community Member of BIZBYTE, performed as a core team member in the organization</p>
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <div class="achievement-icon"><i class="fas fa-certificate"></i></div>
+                            <div class="achievement-content">
+                                <h4>Ex-Intern at Few Technologies</h4>
+                                <p>Intern at a startup named "Few Technologies" as a full stack developer</p>
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <div class="achievement-icon"><i class="fas fa-code"></i></div>
+                            <div class="achievement-content">
+                                <h4>Hackathon Contributor</h4>
+                                <p>Participated in a hackathon named "Code-Kshetra" and scored top 10 in the hackathon</p>
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <div class="achievement-icon"><i class="fas fa-users"></i></div>
+                            <div class="achievement-content">
+                                <h4>Open Source Contributor</h4>
+                                <p>Active contributor to several popular open-source projects with GSSOC, SWOC and Langflow</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title">Projects</h2>
+                <div class="projects-filter">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="web">Web Apps</button>
+                    <button class="filter-btn" data-filter="mobile">Mobile</button>
+                    <button class="filter-btn" data-filter="other">Other</button>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card" data-category="web">
+                        <div class="project-image">
+                            <img src="P3.png" alt="Instant Care App">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://instant-care.vercel.app/" class="project-link"><i class="fas fa-link"></i></a>
+                                    <a href="https://github.com/advay77/Instant-Care" class="project-github"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Instant Care 🧑🏻‍⚕️</h3>
+                            <p>A platform that allows users to get instant medical help and advice from doctors using ayurveda.</p>
+                            <div class="project-tech">
+                                <span>React+Vite</span>
+                                <span>Node.js+Express</span>
+                                <span>MongoDB</span>
+                                <span>Gemini API's+Leaflet.js</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card" data-category="web">
+                        <div class="project-image">
+                            <img src="P6.png" alt="Instant Care App">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="" class="project-link"><i class="fas fa-link"></i></a>
+                                    <a href="https://github.com/advay77/JalSaafTech" class="project-github"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Jal Saaf Tech</h3>
+                            <p>A platform for users to get their water purifier serviced with integrated IOT features.</p>
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>Flask+MongoDB</span>
+                                <span>IOT + Leaflet.js</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card" data-category="mobile">
+                        <div class="project-image">
+                            <img src="P5.png" alt="Capture The Flag">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://capture-the-flag-kappa.vercel.app/" class="project-link"><i class="fas fa-link"></i></a>
+                                    <a href="https://github.com/advay77/Capture-The-FlagOg" class="project-github"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Capture The Flag 🚩</h3>
+                            <p>A futuristic, cyberpunk-themed Capture The Flag (CTF) website with interactive challenges, neon aesthetics, and glitch effects!</p>
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>Flask+MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card" data-category="other">
+                        <div class="project-image">
+                            <img src="P4.png" alt="RESTORAN">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                                    <a href="#" class="project-github"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>🍅 RESTORAN - A Tasty Experience! 😋</h3>
+                            <p> Welcome to RESTORAN, a modern and stylish restaurant website built with cutting-edge technologies! 🚀✨</p>
+                            <div class="project-tech">
+                                <span>Next.js</span>
+                                <span>Tailwind CSS</span>
+                                <span>MongoDB</span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card" data-category="web">
+                        <div class="project-image">
+                            <img src="P7.png" alt="Social Media Dashboard">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://celadon-kitsune-1cb29d.netlify.app/" class="project-link"><i class="fas fa-link"></i></a>
+                                    <a href="https://celadon-kitsune-1cb29d.netlify.app/" class="project-github"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Brew-Haven ☕</h3>
+                            <p>Experience the perfect cup of Coffee ☕</p>
+                            <div class="project-tech">
+                                <span>Next.js</span>
+                                <span>Tailwind CSS</span>
+                                <span>MongoDB</span>
+                                <span>UI/UX</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card" data-category="other">
+                        <div class="project-image">
+                            <img src="P8.png" alt="">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://phenomenal-babka-30e59f.netlify.app/" class="project-link"><i class="fas fa-link"></i></a>
+                                    <a href="https://github.com/advay77/Water-Pollution-Map" class="project-github"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                       
+                       
+                        <div class="project-info">
+                            <h3>🌊 Water Scarcity and Pollution Tracker 🌍</h3>
+                            <p>This project is a web application that allows users to track water scarcity and pollution in their area. </p>
+                            <div class="project-tech">
+                                <span>React + Vite</span>
+                                <span>Tailwind CSS</span>
+                                <span>Leaflet.js + OpenStreetMap</span>
+                                <span>Flask + MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+                        <p>Feel free to reach out to me for any inquiries, collaborations, or just to say hello!</p>
+                        <div class="info-list">
+                            <div class="info-item">
+                                <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                                <div class="info-content">
+                                    <h4>Location</h4>
+                                    <p>Prayagraj, India</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                                <div class="info-content">
+                                    <h4>Email</h4>
+                                    <p>advayanand87@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-icon"><i class="fas fa-phone"></i></div>
+                                <div class="info-content">
+                                    <h4>Phone</h4>
+                                    <p>(+91)6386771480</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                    <a href="https://github.com/advay77" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/advay-anand-a89024277/" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://x.com/AnandAdvay91289" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="instagram.com/advay_anand_7/" class="social-link"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <h3>Send Me a Message</h3>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                                <label for="name">Your Name</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                                <label for="email">Your Email</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                                <label for="subject">Subject</label>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                                <label for="message">Your Message</label>
+                            </div>
+                            <button type="submit" class="btn primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo">AA</div>
+                    <p>Advay Anand</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/advay77" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/advay-anand-a89024277/" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://x.com/AnandAdvay91289" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="instagram.com/advay_anand_7/" class="social-link"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Advay Anand. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="matrix.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+   
