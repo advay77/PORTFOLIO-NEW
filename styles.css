@@ -282,76 +282,192 @@ header .container {
   align-items: center;
 }
 
-.logo {
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: var(--primary-color);
-  font-family: var(--font-mono);
-  width: 50px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 2px solid var(--primary-color);
-  border-radius: 50%;
-  transition: var(--transition);
-}
-
-.logo:hover {
-  transform: rotate(10deg);
-  box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
-}
-
+/* Enhanced Navigation with Effects */
 nav {
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 nav ul {
   display: flex;
+  gap: 25px;
 }
 
 nav ul li {
-  margin-left: 30px;
+  position: relative;
 }
 
 nav ul li a {
   font-size: 0.9rem;
   font-weight: 500;
+  padding: 10px 0;
   position: relative;
-  padding: 5px 0;
+  color: var(--light-text);
+  font-family: var(--font-mono);
+  letter-spacing: 0.5px;
+  transition: var(--transition);
 }
 
-nav ul li a::after {
+/* Cyberpunk Underline Effect */
+nav ul li a::before {
   content: "";
   position: absolute;
   bottom: 0;
   left: 0;
   width: 0;
   height: 2px;
-  background-color: var(--primary-color);
+  background: linear-gradient(90deg, var(--primary-color), transparent);
+  transition: var(--transition);
+  z-index: 1;
+}
+
+/* Halo Glow Effect */
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: var(--primary-color);
+  opacity: 0;
+  filter: blur(5px);
   transition: var(--transition);
 }
 
-nav ul li a:hover::after,
-nav ul li a.active::after {
+nav ul li a:hover {
+  color: var(--primary-color);
+  text-shadow: 0 0 10px rgba(0, 255, 0, 0.3);
+}
+
+nav ul li a:hover::before,
+nav ul li a.active::before {
   width: 100%;
 }
 
+nav ul li a:hover::after {
+  opacity: 0.7;
+}
+
+/* Cyberpunk Hamburger Menu */
 .hamburger {
   display: none;
   flex-direction: column;
   cursor: pointer;
+  padding: 10px;
+  z-index: 1001;
 }
 
 .hamburger span {
-  width: 25px;
+  width: 28px;
   height: 3px;
-  background-color: var(--light-text);
-  margin: 3px 0;
+  background-color: var(--primary-color);
+  margin: 4px 0;
   transition: var(--transition);
+  box-shadow: 0 0 5px rgba(0, 255, 0, 0.5);
 }
 
+/* Active State Animation */
+.hamburger.active span:nth-child(1) {
+  transform: translateY(11px) rotate(45deg);
+  background-color: var(--primary-color);
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.8);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+  transform: translateX(-20px);
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: translateY(-11px) rotate(-45deg);
+  background-color: var(--primary-color);
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.8);
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100vh;
+  background: rgba(5, 10, 15, 0.95);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: var(--transition);
+  padding: 20px;
+}
+
+.mobile-menu.active {
+  left: 0;
+}
+
+.mobile-menu ul {
+  flex-direction: column;
+  gap: 30px;
+  text-align: center;
+}
+
+.mobile-menu li a {
+  font-size: 1.2rem;
+  padding: 15px 0;
+  display: inline-block;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 992px) {
+  nav ul {
+    gap: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    display: none;
+  }
+  
+  .hamburger {
+    display: flex;
+  }
+  
+  /* Enhanced Mobile Menu Effects */
+  .mobile-menu li a::before {
+    bottom: 10px;
+    height: 3px;
+  }
+  
+  .mobile-menu li a:hover {
+    transform: translateX(10px);
+  }
+}
+
+/* Cyberpunk Scanline Overlay */
+.mobile-menu::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    rgba(0, 255, 0, 0.05) 1px,
+    transparent 1px
+  );
+  background-size: 100% 2px;
+  pointer-events: none;
+  animation: scanline 8s linear infinite;
+}
+
+@keyframes scanline {
+  0% { background-position: 0 0; }
+  100% { background-position: 0 100%; }
+}
 /* Home Section */
 #home {
   position: relative;
